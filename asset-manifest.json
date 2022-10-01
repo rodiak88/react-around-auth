@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/react-around-auth/static/css/main.3070f3cf.css",
+    "main.js": "/react-around-auth/static/js/main.3de35a2c.js",
+    "static/js/787.b0e40ee8.chunk.js": "/react-around-auth/static/js/787.b0e40ee8.chunk.js",
+    "static/media/Inter-Medium.woff": "/react-around-auth/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Black.woff": "/react-around-auth/static/media/Inter-Black.c6938660eec019fefd68.woff",
+    "static/media/Inter-Regular.woff": "/react-around-auth/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Medium.woff2": "/react-around-auth/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/Inter-Black.woff2": "/react-around-auth/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
+    "static/media/Inter-Regular.woff2": "/react-around-auth/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/logo_white.svg": "/react-around-auth/static/media/logo_white.50fce9df697a0797141191436383ff74.svg",
+    "index.html": "/react-around-auth/index.html",
+    "static/media/icon_heart.svg": "/react-around-auth/static/media/icon_heart.3826c074a1b94b101e38.svg",
+    "static/media/icon_trash.svg": "/react-around-auth/static/media/icon_trash.c4956c32989e66228de8.svg",
+    "static/media/icon-fail.svg": "/react-around-auth/static/media/icon-fail.df8eddf661ff88f2d0efd3d570d14309.svg",
+    "static/media/icon-success.svg": "/react-around-auth/static/media/icon-success.1b6082f862eac35e2514460237d96ecc.svg",
+    "static/media/icon_heart_fill.svg": "/react-around-auth/static/media/icon_heart_fill.226461bd64622361ffb2.svg",
+    "static/media/icon_close.svg": "/react-around-auth/static/media/icon_close.0a2678e11f71ce96ede3.svg",
+    "static/media/icon-burger.svg": "/react-around-auth/static/media/icon-burger.a46d5c1c53c02d60fc80.svg",
+    "static/media/icon_edit.svg": "/react-around-auth/static/media/icon_edit.8667ac4a523e8fc42e59.svg",
+    "static/media/icon_cross.svg": "/react-around-auth/static/media/icon_cross.d86bb2edc2f6eadb96b7.svg",
+    "main.3070f3cf.css.map": "/react-around-auth/static/css/main.3070f3cf.css.map",
+    "main.3de35a2c.js.map": "/react-around-auth/static/js/main.3de35a2c.js.map",
+    "787.b0e40ee8.chunk.js.map": "/react-around-auth/static/js/787.b0e40ee8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3070f3cf.css",
+    "static/js/main.3de35a2c.js"
+  ]
+}
