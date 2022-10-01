@@ -1,5 +1,5 @@
 {
-  "name": "around-react-auth",
+  "name": "react-around-auth",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,7 +12,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://rodiak.github.io/around-react-auth",
+  "homepage": "https://rodiak88.github.io/react-around-auth/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
