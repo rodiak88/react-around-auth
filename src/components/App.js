@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch, useHistory } from 'react-router';
+import { Redirect } from 'react-router-dom';
 import Header from './Header';
 import Main from './Main';
 import Register from './Register';
@@ -283,6 +284,10 @@ function App() {
 
               <Route path='/signin'>
                 <Login onLogin={onLogin} />
+              </Route>
+
+              <Route>
+                {isLoggedIn ? <Redirect to='/' /> : <Redirect to='/signin' />}
               </Route>
             </Switch>
             <Footer />
