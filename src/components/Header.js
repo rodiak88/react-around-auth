@@ -6,6 +6,11 @@ import { Link } from 'react-router-dom';
 function Header({ userEmail, onSignOut }) {
   const [showMobileHeader, setShowMobileHeader] = React.useState(false);
 
+  function handleMobileSignOut() {
+    setShowMobileHeader(false);
+    onSignOut();
+  }
+
   return (
     <header className='header'>
       <div
@@ -16,7 +21,7 @@ function Header({ userEmail, onSignOut }) {
         }
       >
         <p className='header__userEmail'>{userEmail}</p>
-        <button className='header__logout-btn' onClick={onSignOut}>
+        <button className='header__logout-btn' onClick={handleMobileSignOut}>
           Log out
         </button>
       </div>
