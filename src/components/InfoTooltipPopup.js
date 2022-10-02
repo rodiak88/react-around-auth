@@ -1,6 +1,6 @@
 import React from 'react';
-import SuccessIcon from '../images/icon-success.svg';
-import FailIcon from '../images/icon-fail.svg';
+import successIcon from '../images/icon-success.svg';
+import failIcon from '../images/icon-fail.svg';
 
 function InfoTooltipPopup({ isOpen, closePopup, status }) {
   return (
@@ -11,17 +11,25 @@ function InfoTooltipPopup({ isOpen, closePopup, status }) {
           type='button'
           aria-label='Close window'
           onClick={closePopup}
-        ></button>
+        />
         {status === 'success' ? (
           <>
-            <img className='popup__status-icon' src={SuccessIcon} alt='' />
+            <img
+              className='popup__status-icon'
+              src={successIcon}
+              alt='Success icon'
+            />
             <p className='popup__status-message'>
               Success! You have now been registered.
             </p>
           </>
         ) : (
           <>
-            <img className='popup__status-icon' src={FailIcon} alt='' />
+            <img
+              className='popup__status-icon'
+              src={failIcon}
+              alt='Fail icon'
+            />
             <p className='popup__status-message'>
               Oops, something went wrong! Please try again.
             </p>

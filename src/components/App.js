@@ -219,16 +219,16 @@ function App() {
       .then((res) => {
         if (res.data._id) {
           setInfoTooltipStatus('success');
-          setIsInfoTooltipPopupOpened(true);
           history.push('/signin');
         } else {
           setInfoTooltipStatus('fail');
-          setIsInfoTooltipPopupOpened(true);
         }
       })
       .catch((err) => {
         console.log(err);
         setInfoTooltipStatus('fail');
+      })
+      .finally(() => {
         setIsInfoTooltipPopupOpened(true);
       });
   }

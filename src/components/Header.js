@@ -39,7 +39,7 @@ function Header({ userEmail, onSignOut }) {
               showMobileHeader ? 'header__close-btn' : 'header__burger-icon'
             }
             onClick={() => setShowMobileHeader((show) => !show)}
-          ></button>
+          />
           <div className='header__nav-wrapper'>
             <p className='header__userEmail'>{userEmail}</p>
             <button className='header__logout-btn' onClick={onSignOut}>

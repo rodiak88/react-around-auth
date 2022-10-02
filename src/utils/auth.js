@@ -1,5 +1,12 @@
 export const BASE_URL = 'https://register.nomoreparties.co';
 
+const checkServerResponse = (res) => {
+  if (res.ok) {
+    return res.json();
+  }
+  return Promise.reject(`Error: ${res.status} - ${res.statusText}`);
+};
+
 export const register = (email, password) => {
   return fetch(`${BASE_URL}/signup`, {
     method: 'POST',
@@ -8,18 +15,9 @@ export const register = (email, password) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ email, password }),
-  })
-    .then((res) => {
-      if (res.ok) {
-        return res.json();
-      }
-    })
-    .then((res) => {
-      return res;
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+  }).then((res) => {
+    return checkServerResponse(res);
+  });
 };
 
 export const authorize = (email, password) => {
@@ -32,14 +30,10 @@ export const authorize = (email, password) => {
     body: JSON.stringify({ email, password }),
   })
     .then((res) => {
-      if (res.ok) {
-        return res.json();
-      } else {
-        return Promise.reject(`Error: ${res.status} - ${res.statusText}`);
-      }
+      return checkServerResponse(res);
     })
     .then((data) => {
-      localStorage.setItem('jwt', data.jwt);
+      localStorage.setItem('jwt', data.token);
       localStorage.setItem('email', data.email);
       return data;
     });
@@ -53,13 +47,7 @@ export const checkToken = (token) => {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${token}`,
     },
-  })
-    .then((res) => {
-      if (res.ok) {
-        return res.json();
-      }
-    })
-    .then((res) => {
-      return res;
-    });
+  }).then((res) => {
+    return checkServerResponse(res);
+  });
 };
